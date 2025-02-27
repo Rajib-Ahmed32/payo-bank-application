@@ -10,9 +10,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap">
     <link rel="icon" type="image/x-icon" href="./assets/payo-bank.webp">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <main class="bg-[#1e1e1e]">
+        <section class="min-h-screen bg-[#f4f5f7] mx-3 flex flex-col items-center justify-center lg:w-[60%] lg:mx-auto md:mx-8">
+          <div class="flex flex-col justify-center items-center">
+            <div class="relative h-[180px]">
+                <img src="./assets/bg.png" alt="background image" class="max-w-full md:w-[400px]">
+                <img src="./assets/Group.png" alt="tick-mark" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 w-[100px] md:w-[110px]">
+            </div>
+            <div class="card bg-base-100 rounded-lg mt-4 w-full max-w-sm shrink-0 shadow-sm">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black font-semibold">Your Account Number</span>
+                    </label>
+                    <input type="number" placeholder="Your Number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black font-semibold">Your PIN</span>
+                    </label>
+                    <input type="text" placeholder="PIN" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary rounded-3xl">Login</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </section>
+    </main>
 </body>
 </html>
